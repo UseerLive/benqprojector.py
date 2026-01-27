@@ -716,8 +716,8 @@ class BenQProjector(ABC):
             if matches and matches.group(1).lower() != command.command:
                 raise BenQInvallidResponseError(command, response)
             if not matches and command.command == CMD_MODELNAME:
-                # Some projectors only return the model name withouth the modelname command
-                # W700 instad of *modelname=W700#
+                # Some projectors only return the model name without the modelname command
+                # W700 instead of *modelname=W700#
                 matches = RESPONSE_RE_STATE_ONLY.match(response)
 
         if not matches:
@@ -1169,7 +1169,7 @@ class BenQProjector(ABC):
                 if await self._send_command(BenQCommand(CMD_VOLUME, level)) == str(
                     level
                 ):
-                    logger.debug("Successfully set volume withouth increments")
+                    logger.debug("Successfully set volume without increments")
                     return True
             except BenQUnsupportedItemError:
                 logger.debug("Need increments to set volume")

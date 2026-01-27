@@ -73,7 +73,7 @@ class Test(unittest.TestCase):
         self.assertEqual("OFF", response)
 
     def test_parse_response_w700_modelname_projectoroff(self):
-        # The W700 modelname command returns the command echo and model name withouth *MODELNAME=
+        # The W700 modelname command returns the command echo and model name without *MODELNAME=
         # and # on one line when the projector is turned off
         response = self._projector._parse_response(
             BenQCommand("modelname"), ">*modelname=?#W700", False
@@ -127,7 +127,7 @@ class Test(unittest.TestCase):
         )
 
     def test_parse_response_W1100_unsupported_item(self):
-        # The W1100  returns the error withouth leading * and trailing #
+        # The W1100  returns the error without leading * and trailing #
         self.assertRaises(
             BenQUnsupportedItemError,
             self._projector._parse_response,

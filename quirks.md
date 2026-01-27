@@ -22,7 +22,7 @@ Some projectors do not support the modelname command, the **W1000** for instance
 
 Not all projector models return the modelname when the projector is turned off. The **W1070/W1250** returns `*Block item#`.
 
-Some projectors only return the model name withouth the modelname command prefixed. **W700** returns `W700` instead of the expected `*MODELNAME=W700#`.
+Some projectors only return the model name without the modelname command prefixed. **W700** returns `W700` instead of the expected `*MODELNAME=W700#`.
 
 ## Different response when on vs off
 
