@@ -7,9 +7,10 @@ Created on 27 Nov 2022
 """
 
 try:
-    from ._version import __version__
+    from ._version import __version__ as __version__
 except ModuleNotFoundError:
     pass
+
 from .benqprojector import (
     BAUD_RATES,
     DEFAULT_PORT,
