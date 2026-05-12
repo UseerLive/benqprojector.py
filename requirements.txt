@@ -1,2 +1,2 @@
 aiofiles==25.1.0
-serialx
+serialx>=1.0

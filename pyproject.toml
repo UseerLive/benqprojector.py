@@ -30,7 +30,7 @@ classifiers = [
     "Topic :: Home Automation"
 ]
 dependencies = [
-    "serialx",
+    "serialx>=1.0",
     "aiofiles>=25.1.0",
 ]
 
