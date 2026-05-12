@@ -13,8 +13,8 @@ import time
 from abc import ABC, abstractmethod
 
 import aiofiles
-import serial
-import serial_asyncio_fast as serial_asyncio
+import serialx
+#import serial_asyncio_fast as serial_asyncio
 
 logger = logging.getLogger(__name__)
 
