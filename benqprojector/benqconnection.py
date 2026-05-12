@@ -265,8 +265,8 @@ class BenQSerialConnection(BenQConnection):
                 )
 
             return True
-        except serial.SerialException as ex:
-            raise BenQConnectionError(str(ex)) from ex
+        except:
+            raise BenQConnectionError(str("error lol")) from ex
 
         return False
 
